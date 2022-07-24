@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightHR Task</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="files">
+        <h2>Files</h2>
+        <div class="action-row">
+            <div class="sort-buttons">
+                <p>Sort by:</p>
+                <span id="sort-by-name" class="sort-button" data-sort="name">name</span>
+                <span id="sort-by-date" class="sort-button" data-sort="added">date</span>
+            </div>
+            <label class="search" for="search">
+                Search files:
+                <input id="files-search" type="text" name="search">
+            </label>
+        </div>
+        <div class="title-row">
+            <p class="name">Name</p>
+            <p class="date">Added</p>
+        </div>
+        <div id="files-list-container" class="files-list-container"></div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>

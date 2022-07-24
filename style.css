@@ -1,0 +1,120 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+p {
+    margin-block: 0;
+}
+
+.files {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.folder-files {
+    display: none;
+}
+
+.folder-files.active {
+    display: block;
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.sort-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-button {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.sort-button.active,
+.sort-button:hover {
+    font-weight: 600;
+    color: #03a9f4;
+}
+
+#files-search {
+    padding: 8px;
+    border: 1px solid #333;
+    transition: .3s;
+}
+
+#files-search:focus {
+    border: 2px solid #03a9f4;
+    outline: none;
+}
+
+.title-row,
+.file-item,
+.folder-item {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    padding-block: 5px;
+
+}
+
+.title-row {
+    border-block: 2px solid #333;
+}
+
+.title-row .name,
+.title-row .date {
+    display: flex;
+}
+
+.sort-icon {
+    font-size: 20px;
+    letter-spacing: -5px;
+    cursor: pointer;
+}
+
+.sort-icon.down {
+    transform: rotate(180deg);
+}
+
+.file-item,
+.folder-item {
+    border-bottom: 1px solid #03a9f4;
+    cursor: pointer;
+}
+
+.icon {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+
+.doc-icon {
+    color: blue;
+}
+
+.pdf-icon {
+    color: red;
+}
+
+.folder-icon {
+    color: #ff8f00;
+    font-variation-settings: 'FILL' 1;
+}
